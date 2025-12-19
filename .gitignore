@@ -1,0 +1,79 @@
+# --------------------
+# Python
+# --------------------
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pdb
+
+# Virtual environments
+venv/
+env/
+.venv/
+.env/
+.pipenv
+
+# Byte-compiled / optimized / DLL files
+*.py[cod]
+*$py.class
+
+# --------------------
+# Environment files
+# --------------------
+.env
+.env.*
+!.env.example
+
+# --------------------
+# Database / cache / storage
+# --------------------
+*.db
+*.sqlite3
+image_import.db
+
+# Alembic migrations cache
+alembic/__pycache__/
+alembic/versions/__pycache__/
+
+# --------------------
+# Logs
+# --------------------
+*.log
+logs/
+*.pid
+
+# --------------------
+# Redis dump
+# --------------------
+dump.rdb
+
+# --------------------
+# Docker
+# --------------------
+docker-compose.yml
+.dockerignore
+*.dockerfile
+
+# --------------------
+# VSCode / JetBrains / IDEs
+# --------------------
+.vscode/
+.idea/
+
+# --------------------
+# Node (if any)
+# --------------------
+node_modules/
+
+# --------------------
+# OS files
+# --------------------
+.DS_Store
+Thumbs.db
+
+# --------------------
+# Build artifacts
+# --------------------
+build/
+dist/
