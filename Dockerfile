@@ -17,4 +17,4 @@ COPY . .
 ENV PYTHONPATH=/app
 
 # 🚀 START THE WORKER (THIS IS THE KEY)
-CMD ["rq", "worker", "imports"]
+CMD ["sh", "-c", "rq worker --url $REDIS_URL imports"]

@@ -28,11 +28,11 @@ def list_image_files_in_folder(folder_id: str) -> List[Dict]:
     while True:
         if page_token:
             params["pageToken"] = page_token
-        resp = requests.get(DRIVE_FILES_URL, params=params, timeout=30)
-        resp.raise_for_status()
-        body = resp.json()
-        files.extend(body.get("files", []))
-        page_token = body.get("nextPageToken")
+            resp = requests.get(DRIVE_FILES_URL, params=params, timeout=30)
+            resp.raise_for_status()
+            body = resp.json()
+            files.extend(body.get("files", []))
+            page_token = body.get("nextPageToken")
         if not page_token:
             break
 
